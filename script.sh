@@ -1,4 +1,3 @@
-echo "Hello world, $1"
 find $1 -type f
 echo "----------"
 find $1 -type d
