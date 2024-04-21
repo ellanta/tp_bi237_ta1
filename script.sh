@@ -1,12 +1,9 @@
-
 #!/bin/bash
 
+IFS=$'\n'
 find "$1" -maxdepth 1 -type f
-
 find "$1" -maxdepth 1 -type d
-
 find "$1" -type f
-
 files_in_input_recursive=$(find "$1" -type f)
 for file in $files_in_input_recursive; do
     filename=$(basename "$file")
